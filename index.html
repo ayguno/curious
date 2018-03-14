@@ -164,7 +164,7 @@
                     
                     h4 {
                     text-align: left;
-                    font-size: 20px;
+                    font-size: 18px;
                     }
 				    </style>
 				    
@@ -175,27 +175,44 @@
 								<h2>Machine Learning and Analytics Portfolio </h2>
 							</header>
 
-							<h4> I compiled some of my portfolio in Machine Learning and Analytics. These are some examples you 
-							may find useful if you are learning how to approach a data analysis task and have little experience.<br><br>
+							<h4> It's time for spring cleaning and I have been compiling some of my portfolio in Machine Learning and Analytics. 
+							These are some examples you may find useful if you are learning how to approach a data analysis task and have little experience.<br><br>
 							
-							Along with the reproducible code, I explain: <br><br>
+							Along with the reproducible code examples, I explain my 4-layer approach to machine learning : <br><br>
 							
-							1. Exploratory data analysis: developing expectations from the data. This includes data cleaning, Natural Language Processing (NLP),
-							fitting simple models for missing value imputation, transformations, dimension reduction and feature engineering. <br><br>
+							<span style="font-weight:900">1. Exploratory data analysis: </span> don't throw data into models like kitchen sink.
+							Always develop expectations from the data before starting. This includes data cleaning, Natural Language Processing (NLP), for text features,
+							fitting simple regression models for missing value imputation, scaling and transformations, dimension reduction and feature engineering. <br><br>
 							
-							2. Starting linear: fitting linear models to data, including regularized models like Ridge, Lasso and Elastic Net. My
+							<span style="font-weight:900">2. Always start linear: </span>  start fitting linear models to 'clean' data, including regularized models like Ridge, Lasso and Elastic Net. My
 							hope is to build an intuition about the performance of these linear approaches in different problems and data sets, whether
 							it is a classification or regression question. Understanding how much signal we can extract from a noise basket using linear
 							models is essential, because linear models are the ones with the best interpretability. <br><br>
 							
-							3. Training Machine Learning Algorithms: training both kernel-based (such as Support Vector Machines (SVM) and tree-based 
-							learners (such as RandomForest or Boosted trees), developing an intuition about their performance. Performing cross-validation
-							and trying to account for when the models start overfitting. Developing an idea of the computational cost of building 
+							<span style="font-weight:900">3. Train Machine Learning Algorithms: </span> go and train both kernel-based (such as Support Vector Machines (SVM) and tree-based 
+							learners (such as RandomForest or Boosted trees), develop an intuition about their performance for a particular problem. 
+							Performing cross-validation and trying to understand for when the models start overfitting. Developing an idea of the computational cost of building 
 							a particular classifier or regression model, for a given set of features and hyperparameters. <br><br>
 							
-							4. Hyperparameter tuning (optimization):
+							<span style="font-weight:900">4. Hyperparameter tuning (optimization): </span> once there is an understanding of the performance of
+							different models and computational costs associated with them, I approach hyperparameter optimization if that is feasible.
+							This involves considerations involving some intuition about how hyperparameters might effect the performance of the model, how much time we can effort to wait,
+							what would be a sensible hyperparameter space to scan, among others. Use GridSearch or RandomSearch with cross-validation. 
+							Whenever possible, build a pipeline and perform hyperparameter optimization using the entire pipeline.
+							
 							<br><br>
-							Reproducible code for the samples is also available to fork from my GitHub page.</h4>
+							
+							<span style="font-weight:900">Implementation: </span> There are many computer languages you can use, and many libraries are available
+							to install for a given language. Python and R are probably the most popular languages you can handle almost all data analysis 
+							tasks today. Both of them are free, open source, and they are backed by a large community.
+							I believe using both R and Python makes a powerful combination, also depending on preferences of your team. 
+							I use R to explore data sets, which has an unmatched data visualization
+							capacity thanks to user friendly libraries like ggplot2. Data cleaning process is a blast thanks to libraries like
+							dplyr. Machine learning tasks are greatly simplified using the caret package. I use Python in parallel to R, to perform NLP, and to
+							train advanced machine learning algorithms. Sklearn API and its integration with many built in Python libraries, ease of configuration for distributed computation, 
+							makes Python my choice when it comes to building machine learning pipelines and hyperparameter optimization.
+							
+							</h4>
                             <br><br>
 							<div class="row">
 							<div class="4u 12u$(mobile)">
