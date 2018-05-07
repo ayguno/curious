@@ -94,22 +94,60 @@
                         font-weight: bold;
                         color: #6a11aa;}
                     </style>
-                    <h1> View from Potomac River, Great Falls, Virginia. Photo: Ozan Aygun</h1>
+                    <h1> Fall foliage in Green Mountains, Vermont. Photo: Ozan Aygun</h1>
                     <style>
                     h3 {
                     text-align: left;
-                    font-size: 20px;
+                    font-size: 18px;
                     }
+                    h2 {
+                    text-align: center;
+                    font-size: 40px;
+                    }
+                    
                     </style>
 				<!-- Portfolio -->
 					<section id="portfolio" class="two">
 						<div class="container">
 
-							<header>
+							
 								<h2> Neural Network Optimization using Dropout Regularization </h2>
-							</header>
+							<div style="line-height:100%;"><br></div>
 
-							<p>Description coming soon.</p>
+							<h3>Deep Learning has become the focus of many recent applications of Data Science. Thanks to
+							open-source libraries like Tensorflow and Keras, implementing predictive models
+							using deep neural networks become possible for everyone. The theory behind neural networks is
+							quite complex, and even focus of intense academic research.
+							<div style="line-height:70%;"><br></div>
+							The basic idea of using neural networks is automating feature engineering. This enables extraction of 
+							many many features that are composed of interactions between features that are present in the 
+							original data set. Some of these interactions are beyond the intuition of typical
+							human brain. Within each layer of the neural network, the arrays (also called Tensors) that contain these features 
+							are processed through activation functions and exchanged. Networks learn incrementally by 
+							specialized process called gradient descent, which updates weights associated with neurons through
+							feedback mechanism called backward propagation.
+							<div style="line-height:70%;"><br></div>
+							As the network updates its weights, it has the sole objective of optimizing the loss function, 
+							which results in better predictive performance. However, just like any machine learning algorithm,
+							increasing model complexity to reduce loss function eventually causes overfitting to the training set.
+							<div style="line-height:70%;"><br></div>
+							Dropout regularization is an effective approach to fight against overfitting in deep
+							neural networks. This approach randomly drops neurons (at a specified dropout rate) for a
+							given layer of the network at each learning cycle. This results in removal of these neurons, 
+							masking contribution of their weights to the final prediction. Nearby neurons are expected to 
+							compensate for the impact of dropped weights to achieve the same loss in the cost function. 
+							This process, when used properly, leads to a better generalization of the model and help reducing 
+							the impact of overfitting.
+							<div style="line-height:70%;"><br></div>
+							Here you can learn a regularization strategy to optimize your deep neural networks:
+							<div style="line-height:70%;"><br></div>
+							
+                            <span style="font-weight:900">1. </span> Start with benchmark models: low, medium and high complexity. Develop expectations about your model and overfitting.<div style="line-height:15%;"><br></div>
+                            <span style="font-weight:900">2. </span> Perform regularization on your "medium complexity" network to monitor performance.<div style="line-height:15%;"><br></div>
+                            <span style="font-weight:900">3. </span> Tune-down regularization, slighly increase network complexity, by adding neurons and/or layers, observe overfitting.<div style="line-height:15%;"><br></div>
+                            <span style="font-weight:900">4. </span> Turn-on regularization once again, monitor any noticable boost in out-of-the-box network performance.<div style="line-height:40%;"><br></div>
+
+							</h3>
 
                             
                             
