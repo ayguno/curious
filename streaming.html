@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main_streaming.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52435126-3"></script>
@@ -73,7 +73,7 @@
 				</div>
 
 			</div>
-
+            
 		<!-- Main -->
 			<div id="main">
 
@@ -81,28 +81,62 @@
 					<section id="top" class="one dark cover">
 						<div class="container">
 
-							<header>
-								<h2 class="alt"> Welcome! </a></h2>
-								<p>Come and check out some of my analytics portfolio</p>
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Get started</a>
-							</footer>
+							<br><br><br><br><br><br>
 
 						</div>
 					</section>
-
+                    <style>
+                    h1 {text-align:center;
+                        font-style: italic;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: #6a11aa;}
+                    </style>
+                    <h1> Studying Principal Component Analysis at coffee Break, Cambridge, MA. Photo: Ozan Aygun</h1>
+                    <style>
+                     h3 {
+                    text-align: left;
+                    font-size: 18px;
+                    }
+                    h2 {
+                    text-align: center;
+                    font-size: 35px;
+                    }
+                    </style>
 				<!-- Portfolio -->
 					<section id="portfolio" class="two">
 						<div class="container">
 
-							<header>
-								<h2> Using streaming data and ensemble classifier for incremental learning </h2>
-							</header>
+							
+								<h2> Using streaming data and ensemble classifiers for incremental learning </h2>
+							<div style="line-height:100%;"><br></div>
 
-							<p>Description coming soon.</p>
-
+							<h3>Imagine you have a predictive analytics problem and data is accumulating real-time. 
+							You want to train a model for decision making, but not sure if you are capturing changing 
+							trends in the data. This is a concept sometimes referred to as trend adaptation or concept drift. 
+							Alternatively, you may have a fairly big data set but do not have computational power/memory to 
+							fit all the data into your model and you believe a representative sampling approach might be biased.
+                            <div style="line-height:70%;"><br></div>
+                            How are you going to use streaming data to continuously train a model to reduce bias? 
+                            Some models (such as decision trees) would need to see entire data set in once, so they 
+                            don't provide a productive solution. Fortunately, more flexible and adapdative machine learning 
+                            algorithms exist, including Naive Bayes and Gradient Descent. These fairly simple algorithms can 
+                            be extremely useful when dealing with streaming data, especially when the data can be reduced into 
+                            few dimensions. They generalize well.
+                            <div style="line-height:70%;"><br></div>
+                            In this example, I would like to demonstrate this approach using a binary classification problem, 
+                            where the entire data set contains 200 million training samples. You can find more information about
+                             this data set and feature engineering pipeline <a href = "bayesopt.html", target="_blank"> here. </a>
+                            <div style="line-height:70%;"><br></div>
+                            You will learn the following approach:
+                            <div style="line-height:70%;"><br></div>
+    <span style="font-weight:900">1. </span>Train first tier classifiers using a small (~1 million examples) training set.<div style="line-height:20%;"><br></div>
+    <span style="font-weight:900">2. </span>Establish the out-of the-box-performance of these classifiers.<div style="line-height:20%;"><br></div>
+    <span style="font-weight:900">3. </span>Pick a few best performing 1st tier classifiers, get their predictions. This will reduce the dimension of the data significantly.<div style="line-height:20%;"><br></div>
+    <span style="font-weight:900">4. </span>Ensemble a second tier classifier using the predictions of first tier classifiers.<div style="line-height:20%;"><br></div>
+    <span style="font-weight:900">5. </span>Stream entire training set in small batches through steps 4 and 5, in order to perform incremental (online) learning, and monitor performance of two distinct ensemble classifiers.
+    </h3>
+                            <div style="line-height:100%;"><br></div>
                             
                             
                             <iframe src = "portfolio/streamingdata.html", style = "width: 100%; height: 800px"
