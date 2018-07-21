@@ -130,9 +130,13 @@
 							performance of the model.
 							<div style="line-height:70%;"><br></div>
 							Amongst the hyperparameter tuning approaches, two algorithms are the most common: Grid Search and Randomized Search.
-							Both of these approaches are coupled with cross-validation to obtain a reliable estimate of the cost function.
+							Both of these approaches are coupled with cross-validation to obtain reliable estimates of the cost function.
+							<div style="line-height:70%;"><br></div>
 							Grid Search is an exhaustive search of hyperparameters in a predefined space. This algorithm ensures that all
-							possible combinations of various hyperparameters will be tested and the 
+							possible combinations of various hyperparameters will be tested and the set of hyperparameters that yield the 
+							best performing model will be selected. This may sound very robust, however in large data sets performing
+							Grid Search may not be practical (can you guess why? Hint: think about the computational cost of cross-validation).
+							Randomized  
 							</h3>
 
                             
