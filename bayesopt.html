@@ -136,7 +136,13 @@
 							possible combinations of various hyperparameters will be tested and the set of hyperparameters that yield the 
 							best performing model will be selected. This may sound very robust, however in large data sets performing
 							Grid Search may not be practical (can you guess why? Hint: think about the computational cost of cross-validation).
-							Randomized  
+							<div style="line-height:70%;"><br></div>
+							Randomized Search is a viable alternative for Grid Search. As the name implies, for each iteration a set of
+							hyperparameters will be randomly chosen from the predefined hyperparameter distributions. The maximum number of iterations 
+							can be set, which can limit the computational cost to whatever that is feasible based on the resources. The main disadvantage of
+							Randomized Search is that it is not exhaustive, and we can not guarantee the entire hyperparameter space will be tested. Therefore,
+							potentially better performing set of hyperparameters may be missed due to the iteration constraints predefined.
+							     
 							</h3>
 
                             
