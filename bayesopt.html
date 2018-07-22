@@ -144,7 +144,17 @@
 							potentially better performing set of hyperparameters may be missed due to the iteration constraints predefined.
 							<div style="line-height:70%;"><br></div>
 							When we pause a second and think, we realize that both of these approaches have their own weaknesses. For a given problem,
-							Grid Search may or may not be feasible. For      
+							using Grid Search may or may not be feasible. Fortunately, there are other optimization alternatives that can balance between the
+							need of a exhaustive search and computational constraints.  
+							<div style="line-height:70%;"><br></div>
+							Bayesian Optimization is such an approach. The exact theory behind Bayesian Optimization is too complex to explain here. However, the
+							basic idea involves generating a robust 'prior' for the cost value as a function of various hyperparameters in the defined space. 
+							Once the 'prior' is set, Bayesian Optimization process will actively work to minimize different 'regions' of the cost by adjusting
+							strategic hyperparameters. Since the number of iterations can be set, this optimization approach enables balancing exploration and exploitation.
+							Here I wrote up a basic example of Bayesian Optimization to optimize Hyperparameters of a XGboost classifier. Once you study
+							this example try to understand the flexibility of this approach and how you can use it in other classification or regression problems.
+							Keep in mind that -ironically- Bayesian Optimization has hyperparameters itself, therefore, just like any other approach in machine learning,
+							it does not guarantee the optimal solution for any optimization problem.        
 							</h3>
 
                             
