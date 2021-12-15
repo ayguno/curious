@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ozan Aygun : Curious about data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main_tsanomaly.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52435126-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52435126-3');
+</script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
+							<h1 id="title"> Ozan Aygun</h1>
+							<p>Curious about data</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="index.html#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Introduction</span></a></li>
+								<li><a href="index.html#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Analytics Portfolio</span></a></li>
+								<li><a href="index.html#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Ozan</span></a></li>
+								<li><a href="index.html#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ozan-ayg%C3%BCn-78400151" target="_blank" class="icon fa fa-linkedin-square fa-2x" ><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ayguno" target="_blank" class="icon fa-github fa-2x"><span class="label">Github</span></a></li>
+							<li><a href="#contact" class="icon fa-envelope fa-2x"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<br><br><br><br><br><br>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+                    <style>
+                    h1 {text-align:center;
+                        font-style: italic;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: #6a11aa;}
+                    </style>
+                    <h1> Sunset before storm, San Diego, CA. Photo: Ozan Aygun</h1>
+                    
+				    <style>
+                    
+                     h3 {
+                    text-align: left;
+                    font-size: 18px;
+                    }
+                    h2 {
+                    text-align: center;
+                    font-size: 35px;
+                    }
+                    a{
+                       color:blue;
+                    }
+                    </style>
+                    <style>
+                    img{
+                    width: 100%;
+                    height: auto;
+                    box-shadow: 10px 10px 5px grey;
+                    }
+                    
+                    </style>   				
+				
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							
+								<h2> Anomaly Detective: a tool to quantify anomalies in time-series data </h2>
+							<div style="line-height:100%;"><br></div>
+                            <p><a href="https://ozshiny.shinyapps.io/tsanomaly/" target="_blank" style = "font-color:blue;">Click here to test the app!</a></p>
+							<h3> Anomaly detection in time-series data is a long-standing problem in analytics, with wide range of applications in practice. Over many years, I got involved in solving different types of business problems where I collected and/or analyzed time-series data. In many cases, I performed feature engineering as well as built predictive models using data with a defined time axis. Regardless of the application, anomalies or outliers in time-series data can have profound impact on the resulting analysis and its applications. 
+							</h3>
+   
+                            <h3>
+                            <div style="line-height:70%;"><br></div>
+                            There are many methods that can be used to detect anomalies in time-series data, ranging in their complexity. These approaches include application of simple heuristics, linear models, as well as elaborate machine learning algorithms. While practicing my work over the course of multiple projects, I realized simpler approaches tend to be more cost-effective in diagnosis of time-series anomalizes. This is because complex machine learning algorithms often require larger amounts of data to train, multiple parameters to estimate, and in many cases multiple hyperparameters to tune.  
+
+                            <div style="line-height:70%;"><br></div>
+                            Over several years, I tend to use 2 main approaches to spot anomalies in my time-series projects. The first approach leverages z-scores after some decomposition, whereas the second approach involves fitting a model to quantify and infer anomalies. I streamlined these approaches into utilities to use them again and again for various projects and also built the <a href="https://ozshiny.shinyapps.io/tsanomaly/" target="_blank" style = "color:blue;"> Anomaly Detective </a>, a web-based application that can automate anomaly detection process.  
+
+
+                            <div style="line-height:70%;"><br></div>
+	                        Here I describe this practical tool, as well as the two common methods you can use to detect anomalies in time-series data. The tool currently works for univatiate time-series, while I plan to expand its utility for multivariate series in near future. Simply upload your time-series as a single column csv file, choose the correct frequency of your data (e.g: Monthly), choose the start date of your series from the calendar and click "Monitor anomalies". The results of time-series anomaly detection will be presented in visualizations in a two-tab layout, each tab focusing on one of the detection method as I discussed below. You can interact with the plots by hovering individual data points, which would be enlarged depending on the severity of the anomalies deemed by a particular approach.
+							<br><br>
+							</h3>
+							
+							<h3 style="line-height:70%; font-weight:bold;"><br>
+							Z-scores to quantify time-series anomalies after STL decomposition
+							<br><br>
+							</h3>
+
+							<div style="line-height:70%;"><br></div>
+							<img src="images/tsanomaly1.jpg" alt="" />
+							<div style="line-height:70%;"><br><br></div>
+							<h3> This is by far one of the simplest and most intuitive approach for identifying anomalies in time-series data. The approach essentially relies on the <a href= "https://otexts.com/fpp2/stl.html" target="_blank" style = "color:blue;"> Seasonal and Trend decomposition using Loess (STL) </a> process, particularly the 'remainder' from the STL decomposition. We can simply calculate <a href= "https://en.wikipedia.org/wiki/Standard_score" target="_blank" style = "color:blue;">  z-scores </a> using the remainder series and can monitor extreme values of these z-scores across the time axis. The approch provides a convenient way of identifying anomalies in the time-series data, after accounting for trend and seasonal components of the time-series data.
+
+							<br>
+							<br>
+							
+							Despite the simplicity of this detection approach, there are a few caveats as well. First, interpretation of extreme z-scores assumes a Gaussian distribution, while many time series could be skewed. Second, this approach could be relatively sensitive, hence may highlight many data points as potential outliers. 		
+
+							<br><br> 
+							</h3>
+
+							<h3 style="line-height:70%; font-weight:bold;"><br>
+							Normalized Anomaly Scoring Algorithm
+							<br><br> 
+							</h3>
+
+							<div style="line-height:70%;"><br></div>
+							<img src="images/tsanomaly2.jpg" alt="" />
+							<div style="line-height:70%;"><br></div>
+							<h3> Given the potential caveats of using z-scores for anomaly detection, I wrote up a complementary algorithm that applies a 3-step process to identify potential anomalies in time-series data.
+							<br><br>
+							<h3 style="line-height:70%; font-weight:bold;"> Identify: potential anomalies </h3>
+							
+							
+							<h3 style="line-height: 140%"><br>
+							<ul>
+
+							<li> 1. Check if there is strong seasonal component, seasonally adjust data if necessary (more precisely if the variance of detrended data is higher than variance of robust STL remainder, by a fixed threshold).</li> 
+							<li> 2. Fit <a href= "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/supsmu.html" target="_blank" style = "color:blue;">Friedman's Super Smoother </a> (Friedman, 1984) to the resulting time-series.</li> 
+							<li> 3. Obtain residuals between the time-series and the data fitted on the smoothed line.</li> 
+							<li> 4. Infer outliers based on residuals that are outside of the interquartile range.</li> 
+
+							</ul>
+							</h3>
+
+							<h3 style="line-height:70%; font-weight:bold;"> Suggest: a replacement </h3>
+							<h3 style="line-height: 140%"><br>
+							<ul>
+
+							<li> 5. Assume the identified outliers as "Missing Data at Random"(note that this may or may not be a correct assumption for any given outlier).</li> 
+							<li> 6. Perform linear interpolation to calculate potential replacement(s) for outlier(s): fit a polynomial linear regression and Fourier transformation to build an imputation model to predict missing values. Note that if there is seasonal component, we first seasonally adjust using robust STL, then perform linear interpolation to seasonally adjusted series. We then add back the seasonal component if any. </li> 
+							
+
+							</ul>
+							</h3>
+							<h3 style="line-height:70%; font-weight:bold;"> Finalize: anomaly score standardization </h3>
+							<h3 style="line-height: 140%"><br>
+							<ul>
+
+							<li> 7. Calculate the difference between any outlier and its suggested replacement.</li> 
+							<li> 8. Normalize this difference to standard deviation of the "remainder" from robust STL of entire time-series. </li> 
+							
+
+							</ul>
+							</h3>
+							<h3 style="line-height:70%; font-weight:bold;"><br>
+							Final words:
+							
+							</h3>
+							<br>
+							<h3> I hope you enjoyed learning about this tool. Feel free to use the app for your own anomaly detection problems when dealing with time-series data!
+							</h3>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>Ozan Aygun</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
