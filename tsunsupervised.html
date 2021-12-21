@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ozan Aygun : Curious about data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main_tsunsupervised.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52435126-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52435126-3');
+</script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
+							<h1 id="title"> Ozan Aygun</h1>
+							<p>Curious about data</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="index.html#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Introduction</span></a></li>
+								<li><a href="index.html#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Analytics Portfolio</span></a></li>
+								<li><a href="index.html#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Ozan</span></a></li>
+								<li><a href="index.html#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ozan-ayg%C3%BCn-78400151" target="_blank" class="icon fa fa-linkedin-square fa-2x" ><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ayguno" target="_blank" class="icon fa-github fa-2x"><span class="label">Github</span></a></li>
+							<li><a href="#contact" class="icon fa-envelope fa-2x"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+													
+							<header>
+								<h2 class="alt">   <br> <br> <br>
+								
+								 </a></h2>
+								<p> </p>
+							</header>
+
+						</div>
+					</section>
+                    <style>
+                   
+                    h1 {text-align:center;
+                        font-style: italic;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: #6a11aa;}
+                    </style>
+                    <h1> Ehukai, Oahu, Hawaii. Photo: Ozan Aygun</h1>
+				<!-- Portfolio -->
+				    <style>
+                    
+                     h3 {
+                    text-align: left;
+                    font-size: 18px;
+                    }
+                    h2 {
+                    text-align: center;
+                    font-size: 35px;
+                    }
+                    
+                    </style> 
+				
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							
+								<h2> Dynamic Time Warping: Unsupervised learning for temporal sequences </h2>
+
+							<div style="line-height:100%;"><br></div>
+
+							<h3> In this tutorial, I would like to describe a neat way of understanding different groups of data streams within your time-series data. Imagine you have a large number of time-series collected, for example monthly measurements of a the levels of a certain biomarker for a given clinical trial participant over a year period of time. Perhaps you would like to understand the groups of subjects that display the similar increases and decreases over time. While you can use classical clustering algorithms to tackle this problem, the inherent covariance structure in the time-series data makes the classical similarity/distance-based unsupervised modeling a little bit more complicated. Furthermore, time-series data often are not in the same length (e.g: following the above example, certain participant may lost follow up in the clinical trial, or may have start participating late such that they may not have 12 successive data points each).  
+
+							<div style="line-height:100%;"><br></div>
+							Fortunately, there are elegant methods such as Dynamic time warping (DTW) to measure similarity between two time-series. We can use DTW to understand pairwise relationships between a large number of series, which can help us to extract patterns, insights or engineer distinct features.
+							<br><br>
+							Here, I used unsupervised-learning for an interesting problem: can we identify different patterns from the yearly number of academic publications that correspond to active drug ingredients? Note that academic research is one of the driving factors of drug discovery and any meaningful signal we may obtain from academic research trends can be used to potentially identify new, upcoming drug candidates, or pointing out new research developments for an existing drug.
+							<br><br>
+							To tackle this problem, I web-scraped time series data from NIH's  <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" style = "color:blue;"> PubMed </a> , comprising 1000 yearly PubMed publication counts of drug ingredients between 1950 - 2020. I downloaded the list of drug ingredients from FDA's <a href="https://www.accessdata.fda.gov/scripts/cder/ob/index.cfm" target="_blank" style = "color:blue;"> OrangeBook </a>, hence we have the linked drug approval timeline data available each of these drug ingredients as well.
+							<br><br>
+							In this tutorial, I demonstrate 2 main approaches we can use to extract patterns from this data using Dynamic Time Warping. First I demonstrate preparing a DTW similarity matrix and using it in Hiearchical clustering. I also discuss how the signal forming different clusters can be amplified by applying variance filters. Next, I illustrate application of an independent approach, K-shape clustering for the same data, including a practical illustration of how the hyperparameter k can be tuned to obtain a desireable model that can describe the data. Finally, I also provide different ways of visualizing the resulting time-series clusters and discuss implications of different clusters as lagging indicators of drug approval for given drug ingredients.
+
+							<br><br>
+							I hope you enjoy reading this DTW tutorial and learn something new today!
+							<br><br>
+
+							</h3>
+							  <div style="line-height:100%;"><br></div>
+
+                            
+                            
+                            <iframe src = "portfolio/dtw.html", style = "width: 100%; height: 800px"
+                            marginwidth = "2" 
+                            >
+							 Analytics Portfolio
+							</iframe>
+							
+							
+							
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>Ozan Aygun</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
