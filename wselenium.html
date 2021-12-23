@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>webscraping using selenium and python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main_wselenium.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52435126-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52435126-3');
+</script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
+							<h1 id="title"> Ozan Aygun</h1>
+							<p>Curious about data</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="index.html#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Introduction</span></a></li>
+								<li><a href="index.html#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Analytics Portfolio</span></a></li>
+								<li><a href="index.html#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Ozan</span></a></li>
+								<li><a href="index.html#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ozan-ayg%C3%BCn-78400151" target="_blank" class="icon fa fa-linkedin-square fa-2x" ><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ayguno" target="_blank" class="icon fa-github fa-2x"><span class="label">Github</span></a></li>
+							<li><a href="#contact" class="icon fa-envelope fa-2x"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+													
+							<header>
+								<h2 class="alt">   <br> <br> <br>
+								
+								 </a></h2>
+								<p> </p>
+							</header>
+
+						</div>
+					</section>
+                    <style>
+                   
+                    h1 {text-align:center;
+                        font-style: italic;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: #6a11aa;}
+                    </style>
+                    <h1> Lanterns in Loudoun, VA. Photo: Ozan Aygun</h1>
+				<!-- Portfolio -->
+				    <style>
+                    
+                     h3 {
+                    text-align: left;
+                    font-size: 18px;
+                    }
+                    h2 {
+                    text-align: center;
+                    font-size: 35px;
+                    }
+                    
+                    </style> 
+				
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							
+								<h2> Web-scraping using selenium and Python </h2>
+
+							<div style="line-height:100%;"><br></div>
+
+							<h3> Let's say you would like to get some data through web scraping but the information is somewhat buried in the target website. Perhaps the information is not readily available using a simple URL, but you would need to perform a few "clicks" to get what you need. Is there a way to do this programmatically? This is where selenium comes to help.  
+							<br><br>	
+							Here, I demonstrate how we can programmatically simulate browser actions using selenium and provide an example implementation in Python. The use case described here is scraping the daily stock prices for about 4000 securities in NASDAQ. The program will access to NASDAQ website, wait the page to load (the web page has numerous banner ads), closes a pop up window, and performs a few clicks to browse the 5 year worth of historical price data to download them as a csv file for a given ticker symbol.
+							<br><br>
+							The tutorial would give you an idea about how you can use selenium to simulate a browser session and scrape relatively complex information from web. One note ahead: the process is not necesarily the fastest and requires patience and optimization for a given project. As always, the recommended way of obtaining data is through databases, bulk downloads or APIs whenever possible, and web scraping should only be used as a last resort.
+							<br><br>
+							<div style="line-height:100%;"><br></div>
+							
+
+							
+							
+
+							</h3>
+							  <div style="line-height:100%;"><br></div>
+
+                            
+                            
+                            <iframe src = "portfolio/seleniumparser.html", style = "width: 100%; height: 800px"
+                            marginwidth = "2" 
+                            >
+							 Analytics Portfolio
+							</iframe>
+							<br><br>
+							I hope you enjoyed reading this web scraping tutorial and learned something new today!
+							
+							
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>Ozan Aygun</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
